@@ -51,7 +51,7 @@ $ npm run start
 
 ###  ⚠️ ATENÇÃO ⚠️
 
-Para fazer o teste da aplicação de maneira eficaz peço que, após o inicio das aplicações (back-end e front-end) acesse o http://localhost:3000/ e dois navgeadores diferentes!
+Para fazer o teste da aplicação de maneira eficaz peço que, após o inicio das aplicações (back-end e front-end) acesse o http://localhost:3000/ em dois navgeadores diferentes!
 <br>
 
 ex: cole o link http://localhost:3000/ no google chroome e coloque novamente o http://localhost:3000/ no firefox.
