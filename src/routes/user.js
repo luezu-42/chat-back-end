@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 
 router.post("/", async (req, res) => {
   if (req.body.name == "" || req.body.email == "" || req.body.password == "") {
-    res.status(400);
+    res.sendStatus(400);
     return;
   }
 
@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
       return;
     }
   } catch (err) {
-    res.status(500);
+    res.sendStatus(500);
   }
 
   try {
@@ -45,7 +45,7 @@ router.post("/", async (req, res) => {
     res.json({ email: req.body.email });
     await newUser.save();
   } catch (err) {
-    res.status(500);
+    res.sendStatus(500);
   }
 });
 
@@ -63,7 +63,7 @@ router.post("/auth", async (req, res) => {
           { expiresIn: "48h" },
           (err, token) => {
             if (err) {
-              res.status(400);
+              res.sendStatus(400);
               res.json({ err: "Falha interna" });
             } else {
               res.json({ token });
@@ -71,11 +71,11 @@ router.post("/auth", async (req, res) => {
           }
         );    
     } else {
-      res.status(404);
+      res.sendStatus(404);
       res.json({ err: "O E-mail enviado não existe na base de dados!" });
     }
   } else {
-    res.status(400);
+    res.sendStatus(400);
     res.send({ err: "O E-mail enviado é inválido" });
   }
 });

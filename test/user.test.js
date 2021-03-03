@@ -81,7 +81,7 @@ describe("Cadastro de usuário", () => {
 
 describe("Autenticação", () => {
   test("Deve retornar um token quando logar", () => {
-      let teste = {email: "teste@gmail.com", password: "teste" };
+      let teste = {email: "teste@gmail.com1", password: "teste" };
     return request
       .post("/user/auth")
       .send(teste)
