@@ -5,7 +5,7 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const server = app.listen(process.env.PORT || 3000, () => {
+const server = app.listen(process.env.PORT, () => {
   console.log("Servidor rodando!");
 });
 
