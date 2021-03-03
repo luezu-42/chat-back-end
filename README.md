@@ -56,6 +56,9 @@ Pela falta do opensll(um certificado valido) não é possivel fazer requisiçõe
 Front end: https://chat-front-end.firebaseapp.com/login ❌ back end não está fornecendo dados <br>
 back end: http://52.67.60.183:3000/ ❌ falta de certificado impede o uso da parte de authorization da api
 
+Por estes motivos peço e faça uso do app em modo local!
+
+
 ### Testes(jest)
 
 1️⃣ - Rotas de acesso funcionando? 🟢 <br>
