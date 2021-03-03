@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 //const https = require("https");
 //const fs = require("fs");
 //const path = require("path");
+const JWTSecret = "jsgdhkasgdiqwd123h&**^132123*!!@#!@*";
 
 dotenv.config();
 
@@ -38,7 +39,7 @@ const User = mongoose.model("User", user);
 io.use(async (socket, next) => {
   try {
     const token = socket.handshake.query.token;
-    const payload = await jwt.verify(token, process.env.JWTS);
+    const payload = await jwt.verify(token, JWTSecret);
     socket.userId = payload.id;
     next();
   } catch (err) {}

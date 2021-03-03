@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 dotenv.config();
-const JWTSecret = process.env.JWTS;
+const JWTSecret = "jsgdhkasgdiqwd123h&**^132123*!!@#!@*";
 
 const user = require("../models/User");
 const auth = require("../config/middleware");
@@ -59,7 +59,7 @@ router.post("/auth", async (req, res) => {
     if (user.email === email) {
         jwt.sign(
           { id: user._id, email: user.email },
-          process.env.JWTS,
+          JWTSecret,
           { expiresIn: "48h" },
           (err, token) => {
             if (err) {
