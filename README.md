@@ -60,7 +60,7 @@ E para cada navegador registre uma nova conta.
 
 ### Serviços no ar
 
-Pela falta do opensll(um certificado valido) não é possivel fazer requisições
+Pela falta do opensll(um certificado valido) não é possivel fazer requisições em hosting diferentes
 
 Front end: https://chat-front-end.web.app/login <br>
 Acesso a página? ❌ por falta do back desliguei o uso <br> 
@@ -71,7 +71,7 @@ Acesso a página? ✔️ <br>
 Esta retornando dados? ✔️ <br>
 Esta conseguindo fazer autenticação do usuário? ❌ falta de certificado impede o uso da parte de authorization da api <br>
 <br>
-Por estes motivos peço que faça uso do app em modo local!
+Por estes motivos peço que faça uso do app em modo local! 
 
 
 ### Testes(jest)
