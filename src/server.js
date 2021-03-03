@@ -5,8 +5,9 @@ const cors = require("cors");
 const dotenv = require("dotenv");
 dotenv.config();
 
-const server = app.listen(process.env.PORT || 3000, () => {
-  console.log("Servidor rodando na porta " + server);
+const port = process.env.PORT || 3000
+const server = app.listen(port , () => {
+  console.log("Servidor rodando na porta " + port);
 });
 
 const io = require('socket.io')(server, {

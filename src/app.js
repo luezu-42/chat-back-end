@@ -10,7 +10,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 app.use(cors({ origin: "*" }));
-require("./config/db.config")();
+const db = require("./config/db.config");
+db();
 
 
 app.use("/user", router);
