@@ -58,13 +58,13 @@ back end: http://52.67.60.183:3000/ ❌ falta de certificado impede o uso da par
 
 ### Testes(jest)
 
-*1️⃣ - Rotas de acesso funcionando? 🟢
-*2️⃣ - Deve cadastrar um usuário com sucesso 🟢
-*3️⃣ - Impedir que o usuário se cadastre com campos vazios 🟢
-*4️⃣ - Impedir o cadastro de email repetido 🟢
-*5️⃣ - Deve retornar um token quando logar 🟢
-*6️⃣ - Grupo deve ser criado 🟢
-*7️⃣ - Retorno de todos os grupos 🟢
+1️⃣ - Rotas de acesso funcionando? 🟢 <br>
+2️⃣ - Deve cadastrar um usuário com sucesso 🟢 <br>
+3️⃣ - Impedir que o usuário se cadastre com campos vazios 🟢 <br>
+4️⃣ - Impedir o cadastro de email repetido 🟢 <br>
+5️⃣ - Deve retornar um token quando logar 🟢 <br>
+6️⃣ - Grupo deve ser criado 🟢 <br>
+7️⃣ - Retorno de todos os grupos 🟢
 
 ### 
 
