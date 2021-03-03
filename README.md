@@ -69,5 +69,19 @@ Por destes motivos peço que faça uso do app em modo local!
 6️⃣ - Grupo deve ser criado 🟢 <br>
 7️⃣ - Retorno de todos os grupos 🟢
 
-### 
+### -------------------------
+
+Este app teve como foco o back, o sistema de envio de mensagens
+Repositorio do front end: https://github.com/luezu-42/chat-front-end
+
+### Tecnologias aprendidas
+
+* Jest
+* JWT
+* Socket.io
+* AWS
+* Tailwind
+* OpenSSl
+* ++ Mongodb
+* Express + Socket.io
 
