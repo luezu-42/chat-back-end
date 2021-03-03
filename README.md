@@ -62,7 +62,7 @@ E para cada navegador registre uma nova conta.
 
 Pela falta do opensll(um certificado valido) não é possivel fazer requisições
 
-Front end: https://chat-front-end.firebaseapp.com/login <br>
+Front end: https://chat-front-end.web.app/login <br>
 Acesso a página? ✔️ <br>
 É possivel fazer uso do sistema? ❌ back end não está conseguindo fazer autorização de acesso
 <br><br>
