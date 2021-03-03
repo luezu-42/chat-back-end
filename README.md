@@ -111,12 +111,14 @@ Repositório do front end está bem simples 😂 https://github.com/luezu-42/cha
 * Um erro foi ter usado muitas tecnologias novas para mim juntas...
 * UI, os erros de login e registro para o usuário não está claro, estão presentes apenas no console do back end
 * Função de logout (excluir token)
-* Falta de testes sobre o sokcet.io
-* Uso do Tailwind sem pesquisa antecipada sobre o deploy, pela necessidade de alteração de ambiente do Tailwind, não foi possivel fazer o deploy do app na Vercel e no Heroku. 
+* Falta de testes(jest) sobre o sokcet.io
+* Uso do Tailwind sem pesquisa antecipada sobre o deploy, pela necessidade de alteração de ambiente do Tailwind, não foi possivel fazer o deploy do front-end do app na Vercel e no Heroku. 
 * Mais testes sobre as autorizações do certificado (openssl)
 * Componentização do app no front
 * Falta de estudo sobre middleware
+* Design system na estrutura de arquivos no front (mesmo que não há muitas pages, se tivessse o minimo de componetização poderia ser aplicado)
 
 ### Outros
 
 Deixei as variaveis de ambiente ".env" no repositório por se tratar de um uso local.
+App feito em 4 dias!
