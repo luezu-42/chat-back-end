@@ -92,7 +92,7 @@ Guia dos testes feitos
 ### -------------------------
 
 Este app teve como foco o back, o sistema de envio de mensagens <br>
-Repositorio do front end esta bem simples 😂 https://github.com/luezu-42/chat-front-end
+Repositório do front end está bem simples 😂 https://github.com/luezu-42/chat-front-end
 
 ### Tecnologias aprendidas
 
@@ -116,3 +116,7 @@ Repositorio do front end esta bem simples 😂 https://github.com/luezu-42/chat-
 * Mais testes sobre as autorizações do certificado (openssl)
 * Componetização do app no front
 * Falta de estudo sobre middleware
+
+### Outros
+
+Deixei as variaveis de ambiente ".env" no repositório por se tratar de um uso local.
