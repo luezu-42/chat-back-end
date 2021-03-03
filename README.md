@@ -49,6 +49,10 @@ $ npm run start
 # O servidor inciará na porta:3000 - acesse <http://localhost:3000/>
 ```
 
+###  ⚠️ ATENÇÃO ⚠️
+
+Para fazer o teste da aplicação de maneira eficaz peço que, após o inicio das aplicações (back-end e front-end) acesse o http://localhost:3000/ e dois navgeadores diferentes!<br>
+ex: cole o link http://localhost:3000/ no google chroome e coloque novamente o http://localhost:3000/ no firefox.
 ### Serviços no ar
 
 Pela falta do opensll(um certificado valido) não é possivel fazer requisições
