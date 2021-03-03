@@ -68,7 +68,7 @@ Acesso a página? ✔️ <br>
 <br><br>
 back end: http://52.67.60.183:3000/ <br>
 Acesso a página? ✔️ <br>
-Esta retornando dados? ✔️ >br>
+Esta retornando dados? ✔️ <br>
 Esta conseguindo fazer autenticação do usuário? ❌ falta de certificado impede o uso da parte de authorization da api <br>
 <br>
 Por estes motivos peço que faça uso do app em modo local!
