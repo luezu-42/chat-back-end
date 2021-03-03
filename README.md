@@ -53,7 +53,7 @@ $ npm run start
 
 Pela falta do opensll(um certificado valido) não é possivel fazer requisições
 
-Front end: https://chat-front-end.firebaseapp.com/login ❌ back end não está fornecendo dados
+Front end: https://chat-front-end.firebaseapp.com/login ❌ back end não está fornecendo dados <br>
 back end: http://52.67.60.183:3000/ ❌ falta de certificado impede o uso da parte de authorization da api
 
 ### Testes(jest)
