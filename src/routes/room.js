@@ -8,13 +8,13 @@ const Chatroom = mongoose.model("Chatroom", chatroom);
 room.get("/", async (req, res) => {
     const chatroom = await Chatroom.find({});
 
-    res.json(chatroom);
+    res.status(200).json(chatroom);
 });
 
 room.get("/:id", async (req, res) => {
   const chatroom = await Chatroom.findOne({_id: req.params.id});
 
-  res.json(chatroom);
+  res.status(200).json(chatroom);
 });
 
 room.post("/", async (req, res) => {
@@ -30,7 +30,7 @@ room.post("/", async (req, res) => {
 
   await chatroom.save();
 
-  res.json({
+  res.status(200).json({
     message: "Chatroom created!",
   });
 })

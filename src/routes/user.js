@@ -11,13 +11,13 @@ const user = require("../models/User");
 const auth = require("../config/middleware");
 const User = mongoose.model("User", user);
 
-router.get("/", (req, res) => {
-  res.json(res.data);
+router.get("/", async (req, res) => {
+ await res.json(res.data);
 });
 
 router.post("/", async (req, res) => {
   if (req.body.name == "" || req.body.email == "" || req.body.password == "") {
-    res.sendStatus(400);
+    res.status(400);
     return;
   }
 
@@ -29,7 +29,7 @@ router.post("/", async (req, res) => {
       return;
     }
   } catch (err) {
-    res.sendStatus(500);
+    res.status(500);
   }
 
   try {
@@ -45,7 +45,7 @@ router.post("/", async (req, res) => {
     res.json({ email: req.body.email });
     await newUser.save();
   } catch (err) {
-    res.sendStatus(500);
+    res.status(500);
   }
 });
 
