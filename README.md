@@ -89,11 +89,19 @@ Repositorio do front end esta bem simples 😂 https://github.com/luezu-42/chat-
 * JWT
 * Socket.io
 * AWS
+* PM2
 * Tailwind
 * OpenSSl
 * ++ Mongodb
 * Express + Socket.io
 
-### ERROS
+### Melhorias
 
-Ter usado muitas tecnologias novas para mim juntas...
+* Um erro foi ter usado muitas tecnologias novas para mim juntas...
+* UI, os erros de login e registro para o usuário não está claro, estão presentes apenas no console do back end
+* Função de logout (excluir token)
+* Falta de testes sobre o sokcet.io
+* Uso do Tailwind sem pesquisa antecipada sobre o deploy, pela necessidade de alteração de ambiente do Tailwind, não foi possivel fazer o deploy do app na Vercel e no Heroku. 
+* Mais testes sobre as autorizações do certificado (openssl)
+* Componetização do app no front
+* Falta de estudo sobre middleware
