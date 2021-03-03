@@ -114,7 +114,7 @@ Repositório do front end está bem simples 😂 https://github.com/luezu-42/cha
 * Falta de testes sobre o sokcet.io
 * Uso do Tailwind sem pesquisa antecipada sobre o deploy, pela necessidade de alteração de ambiente do Tailwind, não foi possivel fazer o deploy do app na Vercel e no Heroku. 
 * Mais testes sobre as autorizações do certificado (openssl)
-* Componetização do app no front
+* Componentização do app no front
 * Falta de estudo sobre middleware
 
 ### Outros
