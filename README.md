@@ -122,3 +122,4 @@ Repositório do front end está bem simples 😂 https://github.com/luezu-42/cha
 
 Deixei as variaveis de ambiente ".env" no repositório por se tratar de um uso local.
 App feito em 4 dias!
+Caso algum participante do teste venha a mencionar um erro no mongoose, avise-os que a ultima versão do mongoose está mostrando alguns bugs na conectividade, ultilizar versão "mongoose": "^5.11.18" para correção do erro
