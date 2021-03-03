@@ -63,7 +63,7 @@ E para cada navegador registre uma nova conta.
 Pela falta do opensll(um certificado valido) não é possivel fazer requisições
 
 Front end: https://chat-front-end.web.app/login <br>
-Acesso a página? ✔️ <br>
+Acesso a página? ❌ por falta do back desliguei o uso <br> 
 É possivel fazer uso do sistema? ❌ back end não está conseguindo fazer autorização de acesso
 <br><br>
 back end: http://52.67.60.183:3000/ <br>
