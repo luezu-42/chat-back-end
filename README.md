@@ -70,6 +70,17 @@ Por estes motivos peço que faça uso do app em modo local!
 
 ### Testes(jest)
 
+```bash
+# Entre na pasta de back end
+$ cd chat-back-end
+
+# Após a instalação dos pacotes(npm install) feito no "Iniciando back end!" execute
+$ npm run test
+
+# Aguarde a execução do código
+```
+Guia dos testes feitos
+
 1️⃣ - Rotas de acesso funcionando? 🟢 <br>
 2️⃣ - Deve cadastrar um usuário com sucesso 🟢 <br>
 3️⃣ - Impedir que o usuário se cadastre com campos vazios 🟢 <br>
