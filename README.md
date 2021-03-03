@@ -71,8 +71,8 @@ Por destes motivos peço que faça uso do app em modo local!
 
 ### -------------------------
 
-Este app teve como foco o back, o sistema de envio de mensagens
-Repositorio do front end: https://github.com/luezu-42/chat-front-end
+Este app teve como foco o back, o sistema de envio de mensagens <br>
+Repositorio do front end esta bem simples 😂 https://github.com/luezu-42/chat-front-end
 
 ### Tecnologias aprendidas
 
