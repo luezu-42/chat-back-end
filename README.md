@@ -85,3 +85,6 @@ Repositorio do front end esta bem simples 😂 https://github.com/luezu-42/chat-
 * ++ Mongodb
 * Express + Socket.io
 
+### ERROS
+
+Ter usado muitas tecnologias novas para mim juntas...
