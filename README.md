@@ -109,8 +109,8 @@ Repositório do front end está bem simples 😂 https://github.com/luezu-42/cha
 * PM2
 * Tailwind
 * OpenSSl
-* ++ Mongodb
-* Express + Socket.io
+* Uso um pouco mais avançado de Mongodb
+* Express com Socket.io
 
 ### Melhorias
 
