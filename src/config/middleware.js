@@ -3,25 +3,16 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 
-module.exports = async (req, res, next) => {
-    const authToken = req.headers['authorization'];
-
-    if(authToken != undefined){
-
-        const bearer = authToken.split(' ');
-        var token = bearer[1];
-
-       await jwt.verify(token,process.env.JWTS,(err, data) => {
-            if(err){
-                console.log(err)
-                res.status(401);
-                res.json({err:"Token inválido!"});
-            }else{
-                next();
-            }
-        });
-    }else{
-        res.status(401);
-        res.json({err:"Token inválido!"});
-    } 
+function verifyJWT(req, res, next){
+    const token = req.headers['x-access-token'];
+    if (!token) return res.status(401).json({ auth: false, message: 'Token não encontrado' });
+    
+    jwt.verify(token, process.env.JWTS, function(err, decoded) {
+      if (err) return res.status(500).json({ auth: false, message: 'Falha na autenticação do token' });
+      
+      req.userId = decoded.id;
+      next();
+    });
 }
+
+module.exports = verifyJWT

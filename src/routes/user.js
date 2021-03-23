@@ -5,14 +5,13 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const dotenv = require("dotenv");
 dotenv.config();
-const JWTSecret = process.env.JWTS;
 
-const user = require("../models/User");
 const auth = require("../config/middleware");
+const user = require("../models/User");
 const User = mongoose.model("User", user);
 
 router.get("/", async (req, res) => {
- await res.json(res.data);
+  await res.json(res.data);
 });
 
 router.post("/", async (req, res) => {
@@ -30,6 +29,7 @@ router.post("/", async (req, res) => {
     }
   } catch (err) {
     res.sendStatus(500);
+    return;
   }
 
   try {
@@ -44,47 +44,59 @@ router.post("/", async (req, res) => {
     });
     res.json({ email: req.body.email });
     await newUser.save();
+    return;
   } catch (err) {
     res.sendStatus(500);
+    return;
   }
 });
 
-
 router.post("/auth", async (req, res) => {
-  let { email, password } = req.body;
+  const { email, password } = req.body;
 
   if (email != undefined) {
-    let user = await User.findOne({ email });
-    console.log(user)
+    const user = await User.findOne({ email });
+    console.log(user);
     if (user.email === email) {
-        jwt.sign(
-          { id: user._id, email: user.email },
-          process.env.JWTS,
-          { expiresIn: "48h" },
-          (err, token) => {
-            if (err) {
-              res.sendStatus(400);
-              res.json({ err: "Falha interna" });
-            } else {
-              res.json({ token });
-            }
+      jwt.sign(
+        { id: user._id, email: user.email },
+        process.env.JWTS,
+        { expiresIn: "48h" },
+        (err, token) => {
+          if (err) {
+            res.sendStatus(400);
+            res.json({ err: "Falha interna" });
+            return;
+          } else {
+            res.json({ token });
+            return;
           }
-        );    
+        }
+      );
     } else {
       res.sendStatus(404);
       res.json({ err: "O E-mail enviado não existe na base de dados!" });
+      return;
     }
   } else {
     res.sendStatus(400);
     res.send({ err: "O E-mail enviado é inválido" });
+    return;
   }
 });
 
-//router.delete("/delete/:email", async (res, req) => {
-//    let test = req.json()
-//    console.log(test.body)
-//  await User.deleteOne({ email: req.params.email });
-//  res.sendStatus(200);
-//});
+router.delete("/delete/:email", async (req, res) => {
+  const { email } = req.params;
+  try {
+    await User.findOneAndDelete({ email });
+    res.status(200).json({
+      msg: "Usuário deletado com sucesso",
+    });
+    return;
+  } catch (error) {
+    console.log(error);
+    return;
+  }
+});
 
 module.exports = router;

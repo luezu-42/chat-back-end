@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
-const dotenv = require("dotenv");
-dotenv.config();
 
 async function connect() {
   try {
-  await  mongoose.connect(process.env.DB_URL, {
+  await  mongoose.connect("mongodb://localhost:27017/chat-app", {
         useCreateIndex: true,
         useNewUrlParser: true,
         useUnifiedTopology: true,

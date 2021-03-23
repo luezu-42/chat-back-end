@@ -3,19 +3,11 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const cors = require("cors");
 const dotenv = require("dotenv");
-//const https = require("https");
-//const fs = require("fs");
-//const path = require("path");
 
 dotenv.config();
 
 const port = process.env.PORT || 3333
 
-//const httpsServer = https.createServer({
-//  key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem')),
-//  cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem'))
-//}, app
-//)
 const server = app.listen(port , () => {
   console.log("Servidor rodando na porta " + port);
 });

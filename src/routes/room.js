@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const room = express.Router();
 
+const auth = require("../config/middleware");
 const chatroom = require("../models/Room");
 const Chatroom = mongoose.model("Chatroom", chatroom);
 
@@ -22,7 +23,12 @@ room.post("/", async (req, res) => {
 
   const chatroomExists = await Chatroom.findOne({ name });
 
-  if (chatroomExists) throw "Já existe um grupo em este nome!";
+  if (chatroomExists){
+    res.status(400).json({
+      msg: "Já existe um grupo em este nome!"
+    })
+    return
+  }
 
   const chatroom = new Chatroom({
     name,
