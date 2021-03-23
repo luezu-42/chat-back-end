@@ -49,31 +49,6 @@ $ npm run start
 # O servidor inciará na porta:3000 - acesse <http://localhost:3000/>
 ```
 
-###  ⚠️ ATENÇÃO ⚠️
-
-Para fazer o teste da aplicação de maneira eficaz peço que, após o inicio das aplicações (back-end e front-end) acesse o http://localhost:3000/ em dois navgeadores diferentes!
-<br>
-
-ex: cole o link http://localhost:3000/ no google chroome e coloque novamente o http://localhost:3000/ no firefox.
-
-E para cada navegador registre uma nova conta.
-
-### Serviços no ar
-
-Pela falta do opensll(um certificado valido) não é possivel fazer requisições em hosting diferentes
-
-Front end: https://chat-front-end.web.app/login <br>
-Acesso a página? ❌ por falta do back desliguei o uso <br> 
-É possivel fazer uso do sistema? ❌ back end não está conseguindo fazer autorização de acesso
-<br><br>
-back end: http://52.67.60.183:3000/ <br>
-Acesso a página? ✔️ <br>
-Esta retornando dados? ✔️ <br>
-Esta conseguindo fazer autenticação do usuário? ❌ falta de certificado impede o uso da parte de authorization da api online <br>
-<br>
-Por estes motivos peço que faça uso do app em modo local! 
-
-
 ### Testes(jest)
 
 ```bash
