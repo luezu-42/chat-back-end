@@ -7,7 +7,7 @@ Chat app é uma aplicação com foco em troca de mensagens por salas!
 ### Pré-requisitos
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
-[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) e [MongoDB](https://www.mongodb.com/try/download/community).
 
 ### Iniciando projeto
 
