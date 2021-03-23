@@ -73,7 +73,7 @@ Guia dos testes feitos
 ### -------------------------
 
 Este app teve como foco o back, o sistema de envio de mensagens <br>
-Repositório do front end está bem simples 😂 https://github.com/luezu-42/chat-front-end
+Repositório do front end - https://github.com/luezu-42/chat-front-end
 
 ### Tecnologias aprendidas
 
